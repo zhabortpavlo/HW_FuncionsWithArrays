@@ -1,10 +1,8 @@
-const array = [1, 2, 3, 4, 5, 6, 7];
-
-const removeElement = function (array, item) {
-  const filteredArr = array.filter(function (elem) {
-    return elem !== item;
-  });
-  console.log(filteredArr);
-};
-
-removeElement(array, 6);
+function getPow(number,power) {
+  if (power === 0) {
+  return 1;
+  }
+  return number * getPow(number, power - 1);
+  }
+  
+  console.log(getPow(3,4))
